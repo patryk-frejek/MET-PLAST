@@ -39,13 +39,12 @@
 .navigation__link:link,
 .navigation__link:visited {
 	background-color: transparent;
-	display: inline-block;
 	color: #000;
 	opacity: 1;
 	font-size: 200%;
 	text-decoration: none;
-	border-top: solid 0.3rem transparent;
-	border-bottom: solid 0.3rem transparent;
+height: 100%;
+padding: 1rem 0;
 }
 .navigation__link:hover,
 .navigation__link:active {
@@ -53,8 +52,6 @@
 	background-color: rgba(197, 222, 255, 0.2);
 	z-index: 4;
 	opacity: 1;
-	border-top: solid 0.3rem red;
-	border-bottom: solid 0.3rem #3185fc;
 	transition: all 0.3s;
 }
 
