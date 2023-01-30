@@ -69,7 +69,7 @@
 	justify-content: space-between;
 	background-image: linear-gradient(
 			to bottom,
-			rgba(80, 251, 97, 0.4),
+			rgba(0, 71, 171, .7),
 			rgba(49, 133, 252, 0.1)
 		),
 		url(https://images.unsplash.com/photo-1597227093570-eccc70d8a416?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
@@ -123,7 +123,7 @@
 	background-color: #ff7730;
 	background-image: linear-gradient(
 			to bottom,
-			rgba(80, 251, 97, 0.4),
+			rgba(0, 71, 171, .7),
 			rgba(49, 133, 252, 0.1)
 		),
 		url(https://images.unsplash.com/photo-1597227093570-eccc70d8a416?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
@@ -246,6 +246,7 @@
 .about {
 	margin-top: 8vh;
 	gap: 3rem;
+	border-bottom: solid 3px darkgrey;
 }
 @media only screen and (min-width: 112.5em) {
 	.about {
@@ -268,6 +269,7 @@
 .about__col {
 	width: 40%;
 	text-align: center;
+	padding-bottom: 2rem;
 }
 @media only screen and (max-width: 75em) {
 	.about__col {
@@ -736,6 +738,7 @@
 	margin: 0 auto;
 	margin-top: -30rem;
 	min-height: 75vh;
+	
 }
 @media only screen and (max-width: 75em) {
 	.section-about {
@@ -793,6 +796,7 @@
 	width: 90vw;
 	margin: 0rem auto;
 	padding: 3rem 5rem;
+	min-height: 85vh;
 }
 
 .main-container {
@@ -1029,7 +1033,7 @@ body {
 }
 
 section:not(:last-child) {
-	border-bottom: solid 3px darkgrey;
+	/* border-bottom: solid 3px darkgrey; */
 }
 
 @media (max-width: 115em) {
@@ -1042,7 +1046,7 @@ section:not(:last-child) {
 		border-radius: 0.2rem;
 	}
 	.btn-menu:hover {
-		background-color: rgba(49, 252, 86, 0.8);
+		background-color: rgba(34, 0, 255, 0.8);
 	}
 	.header{
 		    -webkit-clip-path: polygon(0 0, 100% 0, 100% 13vh, 0 100%);
@@ -1138,13 +1142,13 @@ body {
 	text-transform: uppercase;
 	font-weight: 700;
 	transform: skew(30px 30px);
-	color: #006900;
+	color: #0047AB;
 	transition: all 0.2s ease;
 	letter-spacing: 2px;
 }
 @supports (-webkit-background-clip: text) {
 	.heading-secondary {
-		background-image: linear-gradient(to right, #c5deff, #006900);
+		background-image: linear-gradient(to right, #c5deff, #0047AB);
 		-webkit-background-clip: text;
 		color: transparent;
 	}
