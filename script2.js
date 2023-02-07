@@ -9,12 +9,10 @@ function init() {
 			setTimeout(() => {
 				dropmenu[i].classList.remove("active");
 			}, 100);
-			
-		}
+		};
 		nav_item[i].onmouseleave = () =>
 			setTimeout(() => {
 				dropmenu[i].classList.remove("active");
 			}, 100);
 	}
 }
-w
