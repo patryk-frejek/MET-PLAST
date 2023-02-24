@@ -1165,13 +1165,13 @@ body {
 	text-transform: uppercase;
 	font-weight: 700;
 	transform: skew(30px 30px);
-	color: #0047ab;
+	color: black;
 	transition: all 0.2s ease;
 	letter-spacing: 2px;
 }
 @supports (-webkit-background-clip: text) {
 	.heading-secondary {
-		background-image: linear-gradient(to right, #c5deff, #0047ab);
+		background-image: linear-gradient(to right, #c5deff, #000000);
 		-webkit-background-clip: text;
 		color: transparent;
 	}
