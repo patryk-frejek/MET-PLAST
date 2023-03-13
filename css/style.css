@@ -160,7 +160,9 @@
 	background-size: cover;
 	background-position: center center;
 }
-
+.header__banner {
+	position: relative;
+}
 .banner {
 	position: relative;
 	width: 100vw;
@@ -187,7 +189,35 @@
 	animation: banner 1s forwards;
 	opacity: 0;
 }
+.banner__button {
+	display: inline-block;
+	position: absolute;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1rem 3rem;
+	font-size: 2rem;
+	font-weight: 700;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 101;
+	opacity: 0;
+	animation: banner 1s forwards;
+	border-radius: 0.3rem;
+}
+.banner__button:link,
+.banner__button:visited {
+	color: white;
+	border: solid 0.3rem white;
+	background-color: rgba(0, 0, 0, 0.85);
+}
 
+.banner__button:hover,
+.banner__button:active {
+	color: black;
+	border: solid 0.3rem black;
+	background-color: rgba(255, 255, 255, 0.741);
+}
 @keyframes banner {
 	0% {
 		left: 0;
@@ -1270,8 +1300,8 @@ body {
 	font-size: 2.4rem;
 	overflow-y: hidden;
 	line-height: 1.5;
-	margin: auto 0;
-	padding: 1rem;
+	margin: auto 3rem;
+	padding: 1rem 2rem;
 }
 .paragraph:not(:last-child) {
 	margin-bottom: 3rem;
