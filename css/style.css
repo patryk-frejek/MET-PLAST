@@ -202,7 +202,8 @@
 	transform: translateX(-50%);
 	z-index: 101;
 	opacity: 0;
-	animation: banner 1s forwards;
+	animation: banner 1s forwards ;
+	animation-delay: 1s;
 	border-radius: 0.3rem;
 }
 .banner__button:link,
