@@ -202,7 +202,7 @@
 	transform: translateX(-50%);
 	z-index: 101;
 	opacity: 0;
-	animation: banner 1s forwards ;
+	animation: banner 1s forwards;
 	animation-delay: 1s;
 	border-radius: 0.3rem;
 }
@@ -1090,6 +1090,7 @@
 html,
 body {
 	overflow-x: hidden;
+	hyphens: auto;
 }
 html {
 	font-size: 62.5%;
@@ -1301,8 +1302,9 @@ body {
 	font-size: 2.4rem;
 	overflow-y: hidden;
 	line-height: 1.5;
-	margin: auto 3rem;
-	padding: 1rem 2rem;
+	margin: auto auto;
+	padding: 1rem 5rem;
+	max-width: 90rem;
 }
 .paragraph:not(:last-child) {
 	margin-bottom: 3rem;
