@@ -85,6 +85,7 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-evenly;
+	height: 5rem;
 }
 .contact-list__item {
 	display: inline-block;
@@ -166,7 +167,7 @@
 .banner {
 	position: relative;
 	width: 100vw;
-	height: 60vh;
+	height: 80vh;
 	margin-top: -5rem;
 	background-image: url(/img/banner_background.jpg);
 	background-position: center;
@@ -235,6 +236,18 @@
 	}
 }
 
+.box {
+	transform: translateX(-400%);
+	transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+	transform: translateX(400%);
+}
+
+.box.active-box {
+	transform: translateX(0%);
+}
 .footer__columns {
 	display: flex;
 	flex-direction: row;
@@ -374,6 +387,7 @@
 	width: 40%;
 	text-align: center;
 	padding-bottom: 2rem;
+	transition: all 0.4s ease;
 }
 @media only screen and (max-width: 75em) {
 	.about__col {
