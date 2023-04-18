@@ -161,51 +161,63 @@
 	background-size: cover;
 	background-position: center center;
 }
-.header__banner {
-	position: relative;
-}
+
 .banner {
 	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	width: 100vw;
 	height: 80vh;
-	margin-top: -5rem;
+	margin-top: -10vh;
 	background-image: url(/img/banner_background.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 1;
-	filter: blur(3px) contrast(50%);
 	margin-bottom: 5rem;
+	text-align: center;
 }
 .banner__text {
-	position: absolute;
+	width: 100%;
 	text-transform: uppercase;
 	color: white;
 	text-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.8);
 	font-size: 3rem;
 	z-index: 100;
-	top: 40%;
-	width: 100%;
-	transform: translateX(-50%);
 	animation: banner 1s forwards;
 	opacity: 0;
+	margin-bottom: 3rem;
+	/* position: relative; */
+}
+.banner__text--main{
+	margin-bottom: -25vh;
+	
+}
+.banner__text--sub {
+	top:1rem;
+	margin-bottom: -5vh;
+	font-size: 2rem;
+	animation: banner 1s forwards;
 }
 .banner__button {
 	display: inline-block;
-	position: absolute;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 1rem 3rem;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 700;
-	top: 80%;
-	left: 50%;
-	transform: translateX(-50%);
 	z-index: 101;
 	opacity: 0;
 	animation: banner 1s forwards;
 	animation-delay: 1s;
 	border-radius: 0.3rem;
+	/* margin: 2rem auto; */
+}
+.banner__button--1{
+	margin-right: 2rem;
 }
 .banner__button:link,
 .banner__button:visited {
@@ -362,8 +374,13 @@
 
 .about {
 	margin-top: 8vh;
+	padding-top: 3rem;
 	gap: 3rem;
-	border-bottom: solid 3px darkgrey;
+}
+.about:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.95);
+	color: white;
+
 }
 @media only screen and (min-width: 112.5em) {
 	.about {
@@ -853,11 +870,12 @@
 .section-about {
 	background-color: rgba(247, 247, 247, 0.95);
 	padding: 25rem 0 5rem;
-	width: 90vw;
 	margin: 0 auto;
 	margin-top: -30rem;
 	min-height: 75vh;
 }
+
+
 @media only screen and (max-width: 75em) {
 	.section-about {
 		width: 100vw;
